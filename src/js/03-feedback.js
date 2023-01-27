@@ -45,7 +45,7 @@ form.addEventListener('submit', formSubmit);
 
 const readFeedbackForm = localStorage.getItem(FEEDBACK_FORM);
 
-const parsedSettings = JSON.parse(JSON.stringify(readFeedbackForm));
+const parsedSettings = JSON.parse(readFeedbackForm);
 
 updateStorage();
 

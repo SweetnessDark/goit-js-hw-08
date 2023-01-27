@@ -26,7 +26,7 @@ player.getVideoTitle().then(function(title) {
 let localCurrentVideo = localStorage.getItem(VIDEO_CURRENT_TIME);
 console.log(localCurrentVideo);
 
-player.setCurrentTime(30.456).then(function(seconds) {
+player.setCurrentTime(localCurrentVideo).then(function(seconds) {
     // seconds = the actual time that the player seeked to
 }).catch(function(error) {
     switch (error.name) {
